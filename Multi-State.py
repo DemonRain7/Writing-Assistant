@@ -21,13 +21,13 @@ wikipedia.set_lang("en")
 
 # Setting environment variables for LangSmith and Azure OpenAI
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
-os.environ["LANGCHAIN_ENDPOINT"] = "https://api.smith.langchain.com"
-os.environ["LANGCHAIN_API_KEY"] = "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"
+os.environ["LANGCHAIN_ENDPOINT"] = "Your End Point"
+os.environ["LANGCHAIN_API_KEY"] = "Your API KEY"
 os.environ["LANGCHAIN_PROJECT"] = "llm_ps"
 
-os.environ["AZURE_OPENAI_API_KEY"] = "296848302c0b48658c716878f62371a8"
+os.environ["AZURE_OPENAI_API_KEY"] = "Your Open AI API KEY"
 os.environ[
-    "AZURE_OPENAI_ENDPOINT"] = "https://hack-for-fun.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2023-03-15-preview"
+    "AZURE_OPENAI_ENDPOINT"] = "Your End Point"
 
 llm = AzureChatOpenAI(
     azure_deployment="gpt-4o",
